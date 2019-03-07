@@ -18,10 +18,10 @@ https://facebook.github.io/react-native/docs/getting-started.html
   to install the dependencies
 - From terminal run:
   ```
-  react-native run-android
+  $ react-native run-android
   ```
   or
   ```
-  react-native run-ios
+  $ react-native run-ios
   ```
   depending on which device you want to use
