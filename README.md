@@ -16,12 +16,14 @@ https://facebook.github.io/react-native/docs/getting-started.html
   $ npm instal
   ```
   to install the dependencies
+- Make sure the device you want to run the app on is connected to your computer
 - From terminal run:
   ```
   $ react-native run-android
   ```
   or
   ```
-  $ react-native run-ios
+  $ npm install -g ios-deploy
+  $ react-native run-ios --device
   ```
   depending on which device you want to use
