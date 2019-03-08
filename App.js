@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Text, View, TouchableOpacity, FlatList, SafeAreaView,
-  NativeEventEmitter, NativeModules} from 'react-native'
+  NativeEventEmitter, NativeModules, Platform, PermissionsAndroid} from 'react-native'
 import styles from './src/styles'
 import {
   startBle, scanPeripherals, connectToPeripheral,
@@ -30,6 +30,26 @@ export default class App extends Component {
       'BleManagerDidUpdateValueForCharacteristic',
       this.handleUpdateValueForCharacteristic
     )
+
+    if (Platform.OS === 'android' && Platform.Version >= 23) {
+      PermissionsAndroid.check(
+        PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION
+      ).then((result) => {
+        if (result) {
+          console.log("Permission is OK")
+        } else {
+          PermissionsAndroid.request(
+            PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION
+          ).then((result) => {
+            if (result) {
+              console.log("User accept")
+            } else {
+              console.log("User refuse")
+            }
+          });
+        }
+      });
+    }
   }
 
   componentWillUnmount() {
