@@ -1612,6 +1612,11 @@ console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
   integrity sha1-PXz0Rk22RG6mRL9LOVB/mFEAjo4=
 
+convert-hex@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/convert-hex/-/convert-hex-0.1.0.tgz#08c04568922c27776b8a2e81a95d393362ea0b65"
+  integrity sha1-CMBFaJIsJ3drii6BqV05M2LqC2U=
+
 convert-source-map@^1.1.0, convert-source-map@^1.4.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.6.0.tgz#51b537a8c43e0f04dec1993bffcdd504e758ac20"
@@ -4754,6 +4759,11 @@ react-is@^16.6.3, react-is@^16.8.1:
   version "16.8.4"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.4.tgz#90f336a68c3a29a096a3d648ab80e87ec61482a2"
   integrity sha512-PVadd+WaUDOAciICm/J1waJaSvgq+4rHE/K70j0PFqKhkTBsPv/82UGQJNXAngz1fOQLLxI6z1sEDmJDQhCTAA==
+
+react-native-ble-manager@^6.6.2:
+  version "6.6.2"
+  resolved "https://registry.yarnpkg.com/react-native-ble-manager/-/react-native-ble-manager-6.6.2.tgz#bc701c5d9917556579630b479e56d75dcb2754df"
+  integrity sha512-EJqG26zFEmS8tJ7tDWVAhB60j/5un4kJSLpurv7eE0IuGRd9htSJ5vb/9iGl2D75GsDHgknWjddG6OMGCPcwDg==
 
 react-native@0.58.6:
   version "0.58.6"
