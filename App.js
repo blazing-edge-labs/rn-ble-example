@@ -20,7 +20,7 @@ export default class App extends Component {
     services: [],
     characteristics: [],
     advertisedData: null,
-    deviceConnected: null
+    isDeviceConnected: null
   }
 
   componentDidMount() {
